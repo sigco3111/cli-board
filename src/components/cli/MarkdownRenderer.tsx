@@ -5,7 +5,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import rehypeSanitize from 'rehype-sanitize';
+import rehypeSanitize, { defaultSchema } from 'rehype-sanitize';
 import rehypeRaw from 'rehype-raw';
 import 'github-markdown-css/github-markdown-light.css';
 import '../../styles/cli-markdown.css';
@@ -24,7 +24,19 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
       <div className="markdown-body cli-markdown">
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
-          rehypePlugins={[rehypeSanitize, rehypeRaw]}
+          rehypePlugins={[
+            [rehypeSanitize, {
+              ...defaultSchema,
+              attributes: {
+                ...defaultSchema.attributes,
+                img: [
+                  ...(defaultSchema.attributes.img || []),
+                  ['src', 'width', 'height', 'alt', 'title']
+                ]
+              }
+            }],
+            rehypeRaw
+          ]}
         >
           {content}
         </ReactMarkdown>
