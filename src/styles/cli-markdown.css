@@ -1,0 +1,90 @@
+/**
+ * CLI 환경에서 마크다운 렌더링을 위한 스타일
+ */
+
+/* 마크다운 컨테이너 */
+.cli-markdown-container {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  overflow: auto;
+}
+
+/* 마크다운 스타일 오버라이드 */
+.cli-markdown.markdown-body {
+  background-color: transparent;
+  color: inherit;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* 헤더 스타일 */
+.cli-markdown.markdown-body h1,
+.cli-markdown.markdown-body h2,
+.cli-markdown.markdown-body h3,
+.cli-markdown.markdown-body h4,
+.cli-markdown.markdown-body h5,
+.cli-markdown.markdown-body h6 {
+  color: #f0f0f0;
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 링크 스타일 */
+.cli-markdown.markdown-body a {
+  color: #58a6ff;
+}
+
+/* 코드 블록 스타일 */
+.cli-markdown.markdown-body pre {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.cli-markdown.markdown-body code {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #f0f0f0;
+}
+
+/* 테이블 스타일 */
+.cli-markdown.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  border-collapse: collapse;
+}
+
+.cli-markdown.markdown-body table th,
+.cli-markdown.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cli-markdown.markdown-body table tr {
+  background-color: transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cli-markdown.markdown-body table tr:nth-child(2n) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* 인용구 스타일 */
+.cli-markdown.markdown-body blockquote {
+  color: #8b949e;
+  border-left-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 이미지 최대 크기 제한 */
+.cli-markdown.markdown-body img {
+  max-width: 100%;
+  max-height: 300px;
+  margin: 0.5rem 0;
+}
+
+/* 수평선 스타일 */
+.cli-markdown.markdown-body hr {
+  background-color: rgba(255, 255, 255, 0.2);
+} 
