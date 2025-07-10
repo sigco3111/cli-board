@@ -1,8 +1,8 @@
-# MAC-BOARD 프로젝트 구조
+# CLI-BOARD 프로젝트 구조
 
 ## 1. 프로젝트 개요
 
-MAC-BOARD는 Mac OS 인터페이스를 모방한 온라인 게시판 시스템입니다. React, TypeScript, Tailwind CSS, Firebase를 사용하여 구현되었으며, 게시물 CRUD, 구글 및 익명 로그인, 마크다운 지원, 북마크 시스템, 반응형 디자인 등의 기능을 제공합니다.
+CLI-BOARD는 90년대 PC통신 인터페이스에서 영감을 받은 CLI 스타일의 온라인 게시판 시스템입니다. React, TypeScript, Tailwind CSS, Firebase를 사용하여 구현되었으며, 게시물 CRUD, 구글 및 익명 로그인, 마크다운 지원, 북마크 시스템, 반응형 디자인 등의 기능을 제공합니다. 과거 하이텔, 나우누리, 천리안 등의 PC통신 UI를 재현하여 향수를 자극하는 사용자 경험을 제공합니다.
 
 ## 2. 디렉토리 구조
 
