@@ -5,7 +5,7 @@
 
 명령줄 인터페이스(CLI) 스타일로 재구성된 온라인 게시판 입니다.
 
-실행주소 : https://cli-board.vercel.app/
+실행주소 : https://sigco3111.github.io/cli-board/
 
 ## 🌟 주요 기능
 
@@ -238,6 +238,6 @@ HITEL-BOARD는 모바일 기기에서도 사용할 수 있도록 반응형 디�
 
 ## 📞 연락처
 
-프로젝트 링크: https://cli-board.vercel.app/
+프로젝트 링크: https://sigco3111.github.io/cli-board/
 
-프로젝트 관리자 - https://cli-board.vercel.app/ > 자유게시판
+프로젝트 관리자 - https://sigco3111.github.io/cli-board/ > 자유게시판
