@@ -5,8 +5,6 @@
 
 명령줄 인터페이스(CLI) 스타일로 재구성된 온라인 게시판 입니다.
 
-실행주소 : https://sigco3111.github.io/cli-board/
-
 ## 🌟 주요 기능
 
 - **Firebase 인증**
@@ -238,6 +236,21 @@ HITEL-BOARD는 모바일 기기에서도 사용할 수 있도록 반응형 디�
 
 ## 📞 연락처
 
-프로젝트 링크: https://sigco3111.github.io/cli-board/
+프로젝트 링크: https://cli-board.vercel.app/
 
-프로젝트 관리자 - https://sigco3111.github.io/cli-board/ > 자유게시판
+프로젝트 관리자 - https://cli-board.vercel.app/ > 자유게시판
+---
+
+## 📦 호스팅 메모 (2026-08-13)
+
+- **Vercel 프로젝트**: `sigco3111s-projects/cli-board`
+- **라이브 데모**: `https://cli-board.vercel.app/` (alias 자동)
+- **빌드 워크플로**: `npx vite build` (Firebase 키 `.env`에서 import.meta.env로 박힘) → `cp dist/index.html .vercel/output/static/` + `cp dist/assets/index-*.js .vercel/output/static/assets/` (Vercel 빌드 우회) → `vercel deploy --prebuilt --prod`
+- **Firebase 환경변수 (Vercel Production)**:
+  - `VITE_FIREBASE_API_KEY`, `VITE_FIREBASE_AUTH_DOMAIN`, `VITE_FIREBASE_PROJECT_ID`
+  - `VITE_FIREBASE_STORAGE_BUCKET`, `VITE_FIREBASE_MESSAGING_SENDER_ID`, `VITE_FIREBASE_APP_ID`
+- **Firebase Console 작업 필요** (배포 후):
+  1. Firestore → Rules: `allow read, write: if true;` (개발용 임시)
+  2. Authentication → Settings → Authorized domains: `cli-board.vercel.app` 추가
+- **`vercel.json` 보존**: SPA rewrites (`/(.*)` → `/index.html`) — React Router 라우팅용
+- **이전 거짓 링크 제거**: `https://sigco3111.github.io/cli-board/` (404)
