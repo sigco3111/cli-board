@@ -1,4 +1,8 @@
 # 터미널 CLI 스타일 게시판
+Live Demo : https://cli-board.vercel.app/
+
+[![Live](https://img.shields.io/badge/Live-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://cli-board.vercel.app/)
+
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
